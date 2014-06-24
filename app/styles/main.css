@@ -1,0 +1,29 @@
+body {
+    background: #fafafa;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+  }
+
+
+ a:hover{
+   color:#4183c4;
+     }
+
+.left{
+  width:230px;
+  }
+
+  img{
+    width:230px;
+  }
+  a{
+    text-decoration:none;
+    }
+
+  .stats {
+    color:gray;
+    }
+
+    a:hover{
+      color:#4183c4;
+      }

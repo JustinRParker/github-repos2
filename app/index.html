@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>github repo2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/token.js"></script>
+
+        <div class="left"></div>
+        <div class="right"></div>
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+
+
+        <script type="text/template" id="profile">
+
+
+        <img src="<%= avatar_url %>">
+        <h1><%= login %></h1>
+        <h3><%= created_at %></h3>
+        <a href src="user.followers_url"> <%= followers %>
+        <small class = "stats">Followers</small></a>
+        <a href src="user.starred_url"> <%= followers %>
+        <small class = "stats">Starred</small></a>
+        <a href src="user.following_url"> <%= following %>
+        <small class = "stats">Following</small></a>
+        </script>
+
+      <!-- //   <script type="text/template" id="repos">
+      //    <ul>
+      //    <% for (var i = 0; i < repo.length; i++) { %>
+      //    <% var repo = repo[i]; %>
+      //    <li>
+      //     <em><%= repos.name %></em> by <%= repos.starred_url %>
+      //    </li>
+      //   <% } %>
+      // </ul>
+      //   <h1><%= name %></h1>
+      //   </script> -->
+
+        <!-- // <script>
+        // var repoTpl = $('#repos').html();
+        // $('.right').append(_.template(repoTpl, repos));
+        //
+        //
+        // </script> -->
+
+
+
+        <!-- // <script type="text/template" id="repos" > -->
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <!-- // <script src="bower_components/jquery/dist/jquery.js"></script> -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <script>
+        var profileTpl = $get.JSON secureApi.done(function(user)
+        $(".left")append(_template(profileTpl, user));
+        </script>
+        <!-- // <script>
+        // var profileTpl = $('#profile').html();
+        // $('.left').append(_.template(profileTpl, user));
+        // </script> -->
+        <!-- build:js scripts/main.js -->
+
+        <!-- endbuild -->
+</body>
+</html>
